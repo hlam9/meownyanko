@@ -1,15 +1,18 @@
 {
   "files": {
     "main.css": "/meownyanko/static/css/main.bb01fa5f.css",
-    "main.js": "/meownyanko/static/js/main.c5d4f046.js",
+    "main.js": "/meownyanko/static/js/main.ad48888d.js",
+    "static/js/845.d1ba821e.chunk.js": "/meownyanko/static/js/845.d1ba821e.chunk.js",
     "static/js/787.39bb0775.chunk.js": "/meownyanko/static/js/787.39bb0775.chunk.js",
+    "static/media/cat-meow.mp3": "/meownyanko/static/media/cat-meow.3adf84d84fae1399f91b.mp3",
     "index.html": "/meownyanko/index.html",
     "main.bb01fa5f.css.map": "/meownyanko/static/css/main.bb01fa5f.css.map",
-    "main.c5d4f046.js.map": "/meownyanko/static/js/main.c5d4f046.js.map",
+    "main.ad48888d.js.map": "/meownyanko/static/js/main.ad48888d.js.map",
+    "845.d1ba821e.chunk.js.map": "/meownyanko/static/js/845.d1ba821e.chunk.js.map",
     "787.39bb0775.chunk.js.map": "/meownyanko/static/js/787.39bb0775.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb01fa5f.css",
-    "static/js/main.c5d4f046.js"
+    "static/js/main.ad48888d.js"
   ]
 }
