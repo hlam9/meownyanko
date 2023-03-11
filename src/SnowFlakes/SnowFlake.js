@@ -22,47 +22,47 @@ function SnowFlake(){
   };
     return (<section>
         <div id="snoww" className="snowflakes" aria-hidden="true">
-  <div class="snowflake">
+  <div className="snowflake">
   ❅
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
   ❆
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
   ❅
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
   ❆
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
   ❅
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
   ❆
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
     ❅
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
     ❆
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
     ❅
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
     ❆
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
     ❅
   </div>
-  <div class="snowflake">
+  <div className="snowflake">
     ❆
   </div>
   
 </div>
 <div>
       { (
-        <button class="removeSnow" onClick={removeElement}>{buttonText}</button>
+        <button className="removeSnow" onClick={removeElement}>{buttonText}</button>
       )}
     </div>
     </section>

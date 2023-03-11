@@ -5,7 +5,9 @@ function ClipItem(props){
     <li>
         <div>
             <h1>{props.title}</h1>
-            <YoutubeEmbed embedId={`${props.youtubeEmbed}`} ></YoutubeEmbed>
+            <h3>{props.gameCategory}</h3>
+            <YoutubeEmbed embedId={`${props.youtubeEmbed}`} time={props.time} ></YoutubeEmbed>
+            <img src={`${props.emote}`} alt="emote" />
             <p>{props.desc ? props.desc: 'This is a default description.'}</p>
         </div>
     </li>

@@ -1,6 +1,7 @@
 {
   "name": "new",
   "version": "0.1.0",
+  "homepage": "https://hlam9.github.io/meownyanko",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-logical-assignment-operators": "^7.20.7",
@@ -13,9 +14,13 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "tone": "^14.7.77",
+    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +48,25 @@
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.0",
     "@babel/plugin-proposal-export-default-from": "^7.18.10",
-    "@babel/preset-env": "^7.20.2"
+    "@babel/preset-env": "^7.20.2",
+    "gh-pages": "^5.0.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "axios": "axios/dist/node/axios.cjs",
+      "preset": "@vue/cli-plugin-unit-jest",
+      "transformIgnorePatterns": [
+        "node_modules/(?!axios)"
+      ]
+    }
+  },
+  "tone": {
+    "moduleNameMapper": {
+      "axios": "axios/dist/node/axios.cjs",
+      "preset": "@vue/cli-plugin-unit-jest",
+      "transformIgnorePatterns": [
+        "node_modules/(?!axios)"
+      ]
+    }
   }
 }
