@@ -1,7 +1,8 @@
 import ClipItem from "./ClipItem";
-
+import './ClipItem.css';
 function Clips(props){
-    return<section>
+    return<section className="clip">
+        
         {props.clips.map(clip => 
         <><><ClipItem key={clip.id}
                 title={clip.title}
