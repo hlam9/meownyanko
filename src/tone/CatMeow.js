@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import catMeow from './cat-meow.mp3';
 import useSound from 'use-sound';
+import './CatMeow.css';
 function CatMeow() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [play, {stop}] = useSound(catMeow, { volume: 0.5, loop: true });
@@ -23,13 +24,14 @@ function CatMeow() {
 
   return (
     <div>
-      <h1>Cat Meows</h1>
+      <div className="sound">
       <button onClick={handlePlay} disabled={isPlaying}>
-        {isPlaying ? "Playing..." : "Start Snow Cat Melody"}
+        {isPlaying ? "Playing..." : "Play CatJam"}
       </button>
       <button onClick={handleStop} disabled={!isPlaying}>
         Stop
       </button>
+      </div>
     </div>
   );
 }

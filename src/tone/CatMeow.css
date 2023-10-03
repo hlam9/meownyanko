@@ -1,0 +1,12 @@
+.sound{
+    position:fixed;
+    right: 10vh;
+    bottom:7vh;
+    font-size:16px;
+    background-color: black;
+    min-width: 5em;
+  }
+  .sound:hover {
+    background-color:beige;
+    color: white;
+  }

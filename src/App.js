@@ -7,6 +7,7 @@ import axios from 'axios';
 import ClipList from './Clips/ClipList';
 import SnowFlake from './SnowFlakes/SnowFlake';
 import CatMeow from './tone/CatMeow';
+// import CatMusic from './tone/CatMusic';
 function App() {
   const [isLoading, setisLoading] = useState(false);
   const [loadedClips, setLoadedClips] = useState([]);
@@ -71,8 +72,8 @@ function App() {
       </Router>
       
       <header className="App-header">
-      <h1>Hi</h1>
-      <button onClick={Poster}>Helloge</button>
+      <h1>Welcome</h1>
+      {/* <button onClick={Poster}>Helloge</button> */}
       <img src="https://cdn.discordapp.com/emojis/776007413576368198.webp?size=96&quality=lossless" alt="agontfHi" />
       <img src="https://cdn.7tv.app/emote/638767f24cc489ef45239272/2x.webp" alt="peepoShy"></img>
       <img src="https://cdn.7tv.app/emote/6268e21383dd8019c6c79a45/4x.webp" alt="big" />
@@ -81,6 +82,7 @@ function App() {
     <ClipList clips={loadedClips}></ClipList>
     <SnowFlake />
     <CatMeow />
+    {/* <CatMusic /> */}
     </div>
     
   );

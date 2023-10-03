@@ -18,8 +18,8 @@ function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/meow" className="meow">
-                            Meow
+                        <Link to="/about" className="about">
+                            About
                         </Link>
                     </li>
                     <li>

@@ -2,20 +2,20 @@ import { useState } from 'react';
 import './SnowFlake.css';
 
 function SnowFlake(){
-  var snow = true;
+  const [snowing, setSnowing] = useState(true);
 
   const [buttonText, setButtonText] = useState("Disable Snow"); //same as creating your state variable where "Next" is the default value for buttonText and setButtonText is the setter function for your state variable instead of setState
 
   const changeText = (text) => setButtonText(text);
 
   const removeElement = () => {
-    if(!snow){
-      snow = true;
+    if(!snowing){
+      setSnowing(true);
       changeText("Disable Snow")
       document.getElementById("snoww").style.display = "inline";
     }
     else{
-      snow = false;
+      setSnowing(false);
       changeText("Enable Snow")
       document.getElementById("snoww").style.display = "none";
     }
@@ -61,8 +61,10 @@ function SnowFlake(){
   
 </div>
 <div>
-      { (
+      { ( <div className="removeSnow">
         <button className="removeSnow" onClick={removeElement}>{buttonText}</button>
+        <br></br>
+        </div>
       )}
     </div>
     </section>
