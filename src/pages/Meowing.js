@@ -1,6 +1,6 @@
 import React from 'react';
-import './About.css';
-function About() {
+import './Meowing.css';
+function Meowing() {
   return (
     <>
     <div className='desc'>This is a Test.</div>
@@ -8,4 +8,4 @@ function About() {
   )
 }
 
-export default About
+export default Meowing
