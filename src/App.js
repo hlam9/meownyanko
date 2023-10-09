@@ -9,6 +9,7 @@ import CatMeow from './tone/CatMeow';
 import About from './pages/About';
 import Home from './pages/Home';
 import Meowing from './pages/Meowing';
+import PageNotFound from './pages/PageNotFound';
 // import CatMusic from './tone/CatMusic';
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
           <Route path='/about' element={<div><Navbar /><About /></div>} />
           <Route path='/meowing' element={<div><Navbar /><Meowing /></div>} />
           <Route path='/meownyanko' element={<div><Navbar /><Home /></div>} />
+          <Route path="*" element={<div><Navbar /><PageNotFound /></div>} />
         </Routes>
       </Router>
       
