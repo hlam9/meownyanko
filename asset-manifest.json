@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/meownyanko/static/css/main.20ea01d1.css",
-    "main.js": "/meownyanko/static/js/main.4a5f48e5.js",
+    "main.css": "/meownyanko/static/css/main.2efac71a.css",
+    "main.js": "/meownyanko/static/js/main.688fcf28.js",
     "static/js/845.d1ba821e.chunk.js": "/meownyanko/static/js/845.d1ba821e.chunk.js",
     "static/js/787.39bb0775.chunk.js": "/meownyanko/static/js/787.39bb0775.chunk.js",
     "static/media/cat-meow.mp3": "/meownyanko/static/media/cat-meow.3adf84d84fae1399f91b.mp3",
     "index.html": "/meownyanko/index.html",
-    "main.20ea01d1.css.map": "/meownyanko/static/css/main.20ea01d1.css.map",
-    "main.4a5f48e5.js.map": "/meownyanko/static/js/main.4a5f48e5.js.map",
+    "main.2efac71a.css.map": "/meownyanko/static/css/main.2efac71a.css.map",
+    "main.688fcf28.js.map": "/meownyanko/static/js/main.688fcf28.js.map",
     "845.d1ba821e.chunk.js.map": "/meownyanko/static/js/845.d1ba821e.chunk.js.map",
     "787.39bb0775.chunk.js.map": "/meownyanko/static/js/787.39bb0775.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20ea01d1.css",
-    "static/js/main.4a5f48e5.js"
+    "static/css/main.2efac71a.css",
+    "static/js/main.688fcf28.js"
   ]
 }
