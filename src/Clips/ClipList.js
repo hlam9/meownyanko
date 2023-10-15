@@ -1,7 +1,7 @@
 import ClipItem from "./ClipItem";
 import './ClipItem.css';
 function Clips(props){
-    return<section className="clip">
+    return <section className="clip">
         
         {props.clips.map(clip => 
         <><><ClipItem key={clip.id}

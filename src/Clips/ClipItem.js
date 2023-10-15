@@ -4,6 +4,7 @@ function ClipItem(props){
     return (
     <li>
         <div>
+            <br />
             <h1>{props.title}</h1>
             <h3>{props.gameCategory}</h3>
             <YoutubeEmbed embedId={`${props.youtubeEmbed}`} time={props.time} ></YoutubeEmbed>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ClipList from '../Clips/ClipList';
 import axios from 'axios';
-
+import './Home.css';
 function Home() {
   const [isLoading, setisLoading] = useState(false);
   const [loadedClips, setLoadedClips] = useState([]);
@@ -56,12 +56,16 @@ function Home() {
     }
   return (
     <>
+    
     <header className="App-header">
-      <h1>Welcome</h1>
+    <h1>Welcome</h1>
       {/* <button onClick={Poster}>Helloge</button> */}
       <img src="https://cdn.discordapp.com/emojis/776007413576368198.webp?size=96&quality=lossless" alt="agontfHi" />
+      <br />
       <img src="https://cdn.7tv.app/emote/638767f24cc489ef45239272/2x.webp" alt="peepoShy"></img>
+      <br />
       <img src="https://cdn.7tv.app/emote/6268e21383dd8019c6c79a45/4x.webp" alt="big" />
+      <br />
       </header>
 
     <ClipList clips={loadedClips}></ClipList>
