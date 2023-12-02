@@ -67,7 +67,7 @@ function Home() {
       <img src="https://cdn.7tv.app/emote/6268e21383dd8019c6c79a45/4x.webp" alt="big" />
       <br />
       </header>
-
+    
     <ClipList clips={loadedClips}></ClipList>
     </>
   )

@@ -18,13 +18,18 @@ function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/about" className="about">
+                        <Link to="/meownyanko/about" className="about">
                             About
                         </Link>
                     </li>
                     <li>
-                        <Link to="/meowing" className="meowing">
+                        <Link to="/meownyanko/meowing" className="meowing">
                             Meowing
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/meownyanko/ratcat" className="ratcat">
+                            Rats & Cats
                         </Link>
                     </li>
                 </ul>
