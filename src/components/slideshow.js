@@ -14,7 +14,7 @@ export default class Slideshow extends React.Component {
     this.state = {
       slideIndex: 0
     };
-
+    this.x = true;
     /*
      * Khi sử dụng, mình sẽ truyền thuộc tính ratio, giả sử là "3:2"
      * Như vậy, tỉ lệ width/height là this.ratioWH = 3 / 2
@@ -48,6 +48,11 @@ export default class Slideshow extends React.Component {
     this.setState({
       slideIndex: this.getNewSlideIndex(-1)
     });
+    clearInterval(this.automaticInterval);
+    this.automaticInterval = setInterval(
+      () => this.runAutomatic(),
+      Number.parseInt(this.props.timeout)
+    );
   };
 
   // Tiến tới ảnh phía trước, tức index tăng 1 => step = 1
@@ -55,6 +60,11 @@ export default class Slideshow extends React.Component {
     this.setState({
       slideIndex: this.getNewSlideIndex(1)
     });
+    clearInterval(this.automaticInterval);
+    this.automaticInterval = setInterval(
+      () => this.runAutomatic(),
+      Number.parseInt(this.props.timeout)
+    );
   };
 
   // Xác định slideIndex nào sẽ được active
@@ -124,6 +134,28 @@ export default class Slideshow extends React.Component {
     window.removeEventListener("resize", this.updateDimensions);
     if (this.automaticInterval) clearInterval(this.automaticInterval);
   }
+  // autoplay(){
+  //   console.log(this);
+  //   this.setState({
+  //     slideIndex: this.getNewSlideIndex(1)
+  //   });
+  //   console.log(this);
+  //   // if(this.x){
+  //   //   console.log("stopping");
+  //   //   //autoplaying
+  //   //   clearInterval(this.automaticInterval);
+  //   //   this.x=false;
+  //   // }
+  //   // else{
+  //   //   //not playing
+  //   //   console.log("playing");
+  //   //   this.automaticInterval = setInterval(
+  //   //     () => this.runAutomatic(),
+  //   //     Number.parseInt(this.props.timeout)
+  //   //   );
+  //   //   this.x=true;
+  //   // }
+  // }
 
   /*
    * Giao diện của component
@@ -146,7 +178,10 @@ export default class Slideshow extends React.Component {
                   {`${index + 1} / ${this.props.input.length}`}
                 </div>
                 <img className="image" src={image.src} alt={image.caption} />
-                <div className="caption-text">{image.caption}</div>
+                <div className="caption-text">{image.caption}
+                  <div className="emote">{image.emote}</div>
+                </div>
+                
               </div>
             );
           })}
@@ -172,6 +207,9 @@ export default class Slideshow extends React.Component {
             );
           })}
         </div>
+        {/* <div className="autoplay">
+          <button onClick={this.autoplay}></button>
+        </div> */}
       </div>
     );
   }

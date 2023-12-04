@@ -55,7 +55,10 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
+.lp-slideshow > .container > .slide > .emote {
+  position: relative;
+  text-align: inline;
+}
 .lp-slideshow > .container > .prev,
 .lp-slideshow > .container > .next {
   cursor: pointer;

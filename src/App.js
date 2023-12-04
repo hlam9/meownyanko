@@ -18,7 +18,6 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path='/' element={<div><Navbar /><Home /></div>} />
           <Route path='/meownyanko' element={<div><Navbar /><Home /></div>} />
           <Route path='/meownyanko/about' element={<div><Navbar /><About /></div>} />
           <Route path='/meownyanko/meowing' element={<div><Navbar /><Meowing /></div>} />
