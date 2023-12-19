@@ -13,22 +13,22 @@ function Navbar() {
             <div className="classes.container">
                 <ul>
                     <li>
-                        <Link to="/meownyanko" className="home">
+                        <Link to="/" className="home">
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link to="/meownyanko/about" className="about">
+                        <Link to="/about" className="about">
                             About
                         </Link>
                     </li>
                     <li>
-                        <Link to="/meownyanko/meowing" className="meowing">
+                        <Link to="/meowing" className="meowing">
                             Meowing
                         </Link>
                     </li>
                     <li>
-                        <Link to="/meownyanko/ratcat" className="ratcat">
+                        <Link to="/ratcat" className="ratcat">
                             Rats & Cats
                         </Link>
                     </li>

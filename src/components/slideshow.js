@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./slideshow.css";
+import { Link } from 'react-router-dom';
 
 export default class Slideshow extends React.Component {
   constructor(props) {
@@ -207,6 +208,8 @@ export default class Slideshow extends React.Component {
             );
           })}
         </div>
+        <br></br>
+        <p>Slideshow component from <Link to="https://codesandbox.io/p/sandbox/1react-slideshow-txzf1">https://codesandbox.io/p/sandbox/1react-slideshow-txzf1</Link></p>
         {/* <div className="autoplay">
           <button onClick={this.autoplay}></button>
         </div> */}

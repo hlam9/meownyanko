@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 // import React, { useState, useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import SnowFlake from './SnowFlakes/SnowFlake';
 import CatMeow from './tone/CatMeow';
 import About from './pages/About';
@@ -18,10 +18,10 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path='/meownyanko' element={<div><Navbar /><Home /></div>} />
-          <Route path='/meownyanko/about' element={<div><Navbar /><About /></div>} />
-          <Route path='/meownyanko/meowing' element={<div><Navbar /><Meowing /></div>} />
-          <Route path='/meownyanko/ratcat' element={<div><Navbar /><Ratcat /></div>} />
+          <Route path='/' element={<div><Navbar /><Home /></div>} />
+          <Route path='/about' element={<div><Navbar /><About /></div>} />
+          <Route path='/meowing' element={<div><Navbar /><Meowing /></div>} />
+          <Route path='/ratcat' element={<div><Navbar /><Ratcat /></div>} />
           <Route path="*" element={<div><Navbar /><PageNotFound /></div>} />
         </Routes>
       </Router>
